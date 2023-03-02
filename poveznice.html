@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <html lang="hr-HR" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML & CSS" />
+    <meta name="keywords" content="html, css" />
+    <meta name="robots" content="index,follow" />
+    <meta name="Author" content="MGF" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body background="/images/puzzle-dark.jpg">
+    <h3>POVEZNICE (linkovi)</h3>
+
+    <p>
+      Poveznica ne mora biti tekst. Poveznica može biti slika ili bilo koji
+      drugi HTML element!
+    </p>
+
+    <h4>SINTAKSA POVEZNICE UNUTAR HTML DOKUMENTA</h4>
+
+    <p>
+      Pazi!!! ----&gt; SVI ATRIBUTI PIŠU SE S RAZMACIMA BEZ ZAREZA UNUTAR
+      <span class="text-visio-code">&lt;a&gt;</span> ELEMENTA!
+    </p>
+
+    <p>
+      <u
+        >uspostavljanje odnosa između referentnog dokumenta i vanjskog izvora</u
+      >
+    </p>
+
+    <p class="text-visio-code">
+      &lt;a href="" title="" target="" alt="" width="" height=""&gt;&lt;/a&gt;
+    </p>
+
+    <p>
+      <u
+        >lokacija datoteke na lokalnom računalu ili na vanjsku bazu podataka u
+        kojoj je datoteka pohranjena</u
+      >
+    </p>
+
+    <p class="text-visio-code">
+      &lt;a src="" title="" target="" alt="" width="" height=""&gt;&lt;/a&gt;
+    </p>
+    <br />
+
+    <h4>Dijelovi sintakse - atributi</h4>
+
+    <div class="box-elements">
+      <p>
+        <span class="text-visio-code">&lt;a&gt; &lt;/a&gt;</span> - glavni
+        element koji definira hipervezu koja se koristi za povezivanje s jedne
+        stranice na drugu
+      </p>
+    </div>
+
+    <div class="box-elements">
+      <p>
+        <span class="text-visio-code">href</span> - značenje
+        <em>Hypertext Reference</em>
+      </p>
+      <p>
+        navodi URL stranice na koju vodi poveznica (uspostavljanje odnosa između
+        referentnog dokumenta i vanjskog izvora)
+      </p>
+
+      <p>
+        koristimo ga za upućivanje na drugi tekstualni dokument, vezu na web
+        mjesto ili dio stranice na kojem radimo u našem html kodu
+      </p>
+
+      <p>Moguće vrijednosti unutar href atributa:</p>
+      <ul>
+        <li>apsolutni URL - upućuje na drugu</li>
+        <li>web stranicu (kao što je href="http://www.***.com/default.htm")</li>
+        <li>
+          relativni URL - upućuje na datoteku unutar web stranice (kao što je
+          href="default.htm")
+        </li>
+        <li>
+          veza na element s navedenim ID-om unutar stranice (kao što je
+          href="#section2")
+        </li>
+        <li>
+          ostali protokoli (kao što su https://, ftp://, mailto:, file: itd.)
+        </li>
+        <li>skripta (poput href="javascript:alert('Hello');")</li>
+      </ul>
+    </div>
+
+    <div class="box-elements">
+      <p>
+        <span class="text-visio-code">src</span> - značenje
+        <em>izvor ili odredište datoteke</em>
+      </p>
+      <p>
+        navodi lokaciju datoteke na lokalnom računalu ili na vanjsku bazu
+        podataka u kojoj je datoteka pohranjena
+      </p>
+      <p>
+        može se koristiti na sljedećim elementima: &lt;audio&gt;, &lt;embed&gt;,
+        &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;script&gt;,
+        &lt;source&gt;, &lt;track&gt;, &lt;video&gt;
+      </p>
+    </div>
+    <div class="box-elements">
+      <p><strong>RAZLIKA IZMEĐU SRC I HREF</strong></p>
+
+      <p>
+        &lt;src&gt; dodaje neke resurse stranici, a &lt;href&gt; služi samo za
+        pružanje poveznice na resurs (bez dodavanja samog resursa na stranicu)
+      </p>
+    </div>
+
+    <div class="box-elements">
+      <p>
+        <span class="text-visio-code">alt</span> - definira alternativni tekst
+        za sliku, u slučaju kad se slika ne može prikazati
+      </p>
+    </div>
+
+    <div class="box-elements">
+      <p>
+        <span class="text-visio-code">title</span> - opis linka (npr. idi na xx)
+        --------- s mišem preko teksta prikazuje se naziv!
+      </p>
+    </div>
+
+    <div class="box-elements">
+      <p>
+        <span class="text-visio-code">target="_blank"</span> - kada želimo da se
+        otvori novi prozor klikom na poveznicu
+      </p>
+    </div>
+
+    <div class="box-elements">
+      <p><u>URL hyperlink - kao slika</u></p>
+      <p>
+        u ovom slučaju href je poveznica na koju želimo otići, a src je
+        poveznica na sliku koja se nalazi na vanjskoj bazi podataka (webu)
+      </p>
+      <p>
+        <span class="text-visio-code"
+          >&lt;a&gt; target="_blank" href="https://www.***.com" title="go to
+          ime" > &lt;img src="***.jpg" alt="ime stranice" /&gt;&lt;/a&gt;
+        </span>
+      </p>
+      <a target="_blank" href="https://unsplash.com/photos/oqStl2L5oxI"
+        ><img
+          src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="HTML Images"
+          height="120"
+      /></a>
+    </div>
+
+    <div class="box-elements">
+      <p><u>skakanje na početak trenutne stranice</u></p>
+      <p>href="#top" ili href="#"</p>
+    </div>
+    <div class="box-elements">
+      <h4>CSS atributi za izgled (boju) poveznica</h4>
+      <ul>
+        <li>text-decoration - ako želimo da poveznica nije podcrtana</li>
+        <li>
+          background-color - ako želimo sami odrediti boju poveznice (umjestno
+          unaprijed predviđenih boja)
+        </li>
+        <li>a:link - neposjećena poveznica</li>
+        <li>a:visited - poveznica koja je već posjećena</li>
+        <li>a:hover - poveznica iznad koje stojimo s mišem</li>
+        <li>a:active - poveznica u trenutku kada kliknemo s mišem</li>
+      </ul>
+    </div>
+
+    <div class="box-elements">
+      <p><u>skakanje unutar HTML dokumenta</u></p>
+
+      <p>href="#value" ------ gdje želimo skočiti</p>
+
+      <p>id="value" -------- oznaka za "skakanje"</p>
+
+      <p>primjer:</p>
+      <p>id="C3 upisano je u elementu Chapter 3</p>
+      <p>
+        a href="#C3" upisano je u elementu s kojeg želimo "skočiti na Chapter 3
+      </p>
+      <img src="/images/href-id.jpg" />
+    </div>
+
+    <!--shoutout to the author of background image on this page-->
+    <div class="shoutout">
+      Background photo by
+      <a
+        href="https://unsplash.com/@edge2edgemedia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Edge2Edge Media</a
+      >
+      on
+      <a
+        href="https://unsplash.com/photos/x21KgBfOd_4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+        >Unsplash</a
+      >
+    </div>
+  </body>
+</html>

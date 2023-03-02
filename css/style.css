@@ -1,0 +1,175 @@
+/* 	bold text pisati sa <strong>
+	italic text pisati s <em>
+	jer ih browseri bolje ističu ako se mijenja izgled stranice zbog raznih disability	*/
+
+/* &lt; stands for the less-than sign: <
+&gt; stands for the greater-than sign: >
+*/
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+    url("/fonts/roboto-v30-latin/roboto-v30-latin-regular.woff") format("woff"),
+    url("/fonts/roboto-v30-latin/roboto-v30-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/roboto-v30-latin/roboto-v30-latin-regular.woff2")
+      format("woff2"),
+    url("/fonts/roboto-v30-latin/roboto-v30-latin-regular.eot"),
+    url("/fonts/roboto-v30-latin/roboto-v30-latin-regular.ttf")
+      format("truetype"),
+    url("/fonts/roboto-v30-latin/roboto-v30-latin-regular.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Itim", sans-serif;
+  src: local("Itim"), url("/fonts/Itim/itim-regular-webfont.eot"),
+    url("vitim-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Itim/itim-regular-webfont.woff2") format("woff2"),
+    url("/fonts/Itim/itim-regular-webfont.woff") format("woff"),
+    url("/fonts/Itim/Itim-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  color-scheme: dark light;
+}
+body {
+  font-family: "Roboto";
+  background-color: #2d2d2f;
+  background-size: cover;
+  color: rgb(190, 185, 185);
+  padding-left: 30px;
+  margin: 15px;
+}
+
+.header {
+  background-color: cyan;
+  color: #4e4e53;
+  padding: 15px;
+}
+
+/*.responsive {
+  width: 100%;
+  max-height: 300px;
+}*/
+
+.example {
+  background-color: rgb(143, 197, 244);
+  max-width: fit-content;
+}
+p {
+  font-size: 14px;
+}
+
+.text-visio-code {
+  color: rgb(232, 55, 152);
+}
+
+h1 {
+  color: rgb(247, 247, 248);
+}
+
+h2 {
+  color: rgb(63, 61, 67);
+}
+h3 {
+  color: #f2a58e;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Itim ";
+  color: rgb(130, 171, 130);
+}
+
+/*div {
+  background-color: rgb(205, 239, 227);
+  max-width: fit-content;
+  border: solid 1px;
+  border-style: dashed;
+  border-radius: 10px;
+  border-color: #000099;
+  padding: 10px;
+}*/
+
+/* .even-columns > * {
+	flex: 1;
+} */
+
+/* the CSS box model */
+
+/* 	Margin:
+	Border:
+	Padding: */
+
+.box-cssboxmodel {
+  background: rgb(187, 237, 187);
+  width: fit-content;
+
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+
+  border-left-width: 10px;
+  border-left-color: rgb(27, 14, 209);
+  border-left-style: solid;
+
+  border-right-width: 20px;
+  border-right-color: rgb(138, 68, 235);
+  border-right-style: dotted;
+
+  border-bottom-width: 15px;
+  border-bottom-color: red;
+  border-bottom-style: double;
+
+  padding: 100px;
+}
+
+.box-lightbackground {
+  color: rgb(27, 14, 209);
+}
+
+.box-elements {
+  background-color: #464649;
+  border: solid;
+  border-radius: 10px;
+  border-color: antiquewhite;
+  padding: 20px;
+  margin-block-start: 5px;
+  width: fit-content;
+}
+
+/* unvisited link */
+a.link {
+  color: #0000ff;
+}
+/* visited link */
+a:visited {
+  color: rgb(223, 43, 166);
+}
+/* mouse over link */
+a:hover {
+  color: rgb(11, 224, 82);
+}
+
+/*a::before {
+  content: "🔗";
+}*/
+
+/*.local-link::before {
+  content: url("../../media/examples/firefox-logo.svg");
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}*/
+
+.shoutout {
+  text-align: end;
+  font-size: 10px;
+}

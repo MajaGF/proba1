@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="opis web stranice" />
+    <meta
+      name="keywords"
+      content="popis ključnih riječi vezanih za sadržaj stranice "
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="Author" content="Ime tvrtke koja je dizajnirala sajt" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <link rel="stylesheet" href="css/style.css" />
+     </head>
+
+  <body>
+    <h3><center>STRUKTURA HTML STRANICE</center></h3>
+<!-- !DOCTYPE - html - head - title - body - h1-6 - p - body - html -->
+<p>otvaranje novog html dokumenta .......</p>
+
+<p>Svaki HTLM dokumet počinje oznakom <span class="text-visio-code">&lt;!DOCTYPE html&gt;</span></p>
+
+<p>HTML dokument počinje oznakom <span class="text-visio-code">&lt;html&gt;</span> i u osnovi je podijeljen na dva bloka HTML oznaka.</p>
+
+<p>Prvi blok je zaglavlje stranice označava se oznakom <span class="text-visio-code">&lt;head&gt;</span> 
+gdje se uvrštavaju</p>
+<ul>
+  <li>tzv. meta informacije koje nisu vidljive u prikazu web stranice (dijelovi HTML-a u stranici koje upotrebljavaju tražilice da bi zapisale informacije o vašoj stranici
+kao što su naslov stranice, osnovna obilježja stranice 
+jezik stranice, kodna tablica znakova, ključne riječi, ime i prezime autora,</li> 
+<li>te poveznice na druge Internet stranice povezane u dokumentu </li>
+</ul>
+<p>i zavšrava oznakom <span class="text-visio-code">&lt;/head&gt;</span></p>
+
+<p>Primjeri meta informacija, poveznica, stilova:</p>
+<div class="example">
+<pre>
+&lt;head&gt; 
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="description" content="opis web stranice"&gt;
+  &lt;meta name="keywords" content="popis ključnih riječi vezanih za sadržaj stranice "&gt;
+  &lt;meta name="robots" content="index,follow"&gt;
+  &lt;meta name="Author" content="Ime tvrtke koja je dizajnirala sajt"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; ----&gt; 
+  stranica učitava cijela neovisno o veličini uređaja na kojem se otvara!
+  
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=naziv fonta"&gt;
+  &lt;link rel....&gt;
+
+  &lt;style>&lt;style&gt;
+  &lt;title>&lt;/title> (naziv HTML stranice) --&gt;
+&lt;/head&gt;  
+</pre>
+</div>
+
+
+<p>Drugi blok je tijelo stranice označava se oznakom <span class="text-visio-code">&lt;body&gt;</span> 
+i sadrži sadržaj stranice prikazan u mrežnom pregledniku (tekst, slike, tablice, poveznice i sl.)
+završava oznakom <span class="text-visio-code">&lt;/body&gt;</span></p>
+
+
+<p>Na kraju svakog HTML dokumenta smještene su oznake
+  <span class="text-visio-code">&lt;/body&gt;</span> i <span class="text-visio-code">&lt;/html&gt;</span></p>
+
+
+<h1> - naslovi (od 1-6)
+<p> - paragrafi
+
+<!-- Write your comments here -->
+HTML tag - ne vidi se na stranici a služi za podsjetnike i sl.
+
+***************************************
+PRAZNI TAGOVI (jedini NEMAJU "end tag")
+<br>  ---- prijelom u drugi red
+<hr>  ---- crta ispod teksta
+<img>
+<link> ---- uvijek unutar <head></head> taga
+<meta> ---- uvijek unutar <head></head> taga
+... (za popis vidi empty tags u tips.xlsx)
+
+In HTML5, you can optionally include a trailing slash to indicate they self-close, eg: <br/> or <br /> ....... najbolje BEZ "/"
+**********************************************************
+
+  </body>
+</html>
