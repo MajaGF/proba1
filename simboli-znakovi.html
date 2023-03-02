@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <html lang="hr-HR" />
+    <title>Moja prva web stranica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML & CSS" />
+    <meta name="keywords" content="html, css" />
+    <meta name="robots" content="index,follow" />
+    <meta name="Author" content="MGF" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <h2>HTML Entities</h2>
+  <p>Some characters are reserved in HTML.</p>
+  <p>
+    If you use the less than (&lt;) or greater than (&gt;) signs in your text,
+    the browser might mix them with tags.
+  </p>
+  <p>Character entities are used to display reserved characters in HTML.</p>
+  <p>A character entity looks like this:</p>
+  <div class="w3-example">
+    <div class="w3-code notranslate htmlHigh">
+      &amp;<i>entity_name</i>;
+      <p>OR</p>
+      &amp;#<i>entity_number</i>;
+    </div>
+  </div>
+  <p>
+    To display a less than sign (&lt;) we must write: <b>&amp;lt;</b> or
+    <b>&amp;#60;</b>
+  </p>
+  <div class="w3-panel w3-note">
+    <p>
+      <strong>Advantage of using an entity name:</strong> An entity name is easy
+      to remember.<br />
+      <strong>Disadvantage of using an entity name:</strong> Browsers may not
+      support all entity names, but the support for entity numbers is good.
+    </p>
+  </div>
+
+  <div>
+    <h2>Non-breaking Space</h2>
+    <p>
+      A commonly used entity in HTML is the non-breaking space:
+      <strong>&amp;nbsp;</strong>
+    </p>
+    <p>A non-breaking space is a space that will not break into a new line.</p>
+    <p>
+      Two words separated by a non-breaking space will stick together (not break
+      into a new line). This is handy when breaking the words might be
+      disruptive.
+    </p>
+    <p>Examples:</p>
+    <ul>
+      <li>&sect; 10</li>
+      <li>10 km/h</li>
+      <li>10 PM</li>
+    </ul>
+
+    <p>
+      Another common use of the non-breaking space is to prevent browsers from
+      truncating spaces in HTML pages.
+    </p>
+    <p>
+      If you write 10 spaces in your text, the browser will remove 9 of them. To
+      add real spaces to your text, you can use the
+      <strong>&amp;nbsp;</strong> character entity.
+    </p>
+  </div>
+  <hr />
+  <h2>Some Useful HTML Character Entities</h2>
+  <table>
+    <tr>
+      <th>Result</th>
+      <th>Description</th>
+      <th>Entity Name</th>
+      <th>Entity Number</th>
+      <th style="width: 10%">Try it</th>
+    </tr>
+    <tr>
+      <td style="height: 29px"></td>
+      <td style="height: 29px">non-breaking space</td>
+      <td style="height: 29px">&amp;nbsp;</td>
+      <td style="height: 29px">&amp;#160;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_nbsp"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_lt"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_gt"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_amp"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&quot;</td>
+      <td>double quotation mark</td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_quot"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&apos;</td>
+      <td>single quotation mark (apostrophe)</td>
+      <td>&amp;apos;</td>
+      <td>&amp;#39;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_apos"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&cent;</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_cent"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&pound;</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_pound"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&yen;</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_yen"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&euro;</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_euro"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&copy;</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_copy"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#174;</td>
+      <td>registered trademark</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_ent_reg"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+  </table>
+
+  <h2>Some Mathematical Symbols Supported by HTML</h2>
+  <table class="ws-table-all notranslate">
+    <tr>
+      <th style="width: 10%">Char</th>
+      <th style="width: 10%">Number</th>
+      <th style="width: 15%">Entity</th>
+      <th>Description</th>
+      <th style="width: 10%">Try it</th>
+    </tr>
+    <tr>
+      <td>&#8704;</td>
+      <td>&amp;#8704;</td>
+      <td>&amp;forall;</td>
+      <td>FOR ALL</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_forall"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8706;</td>
+      <td>&amp;#8706;</td>
+      <td>&amp;part;</td>
+      <td>PARTIAL DIFFERENTIAL</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_part"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8707;</td>
+      <td>&amp;#8707;</td>
+      <td>&amp;exist;</td>
+      <td>THERE EXISTS</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_exist"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8709;</td>
+      <td>&amp;#8709;</td>
+      <td>&amp;empty;</td>
+      <td>EMPTY SETS</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_empty"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8711;</td>
+      <td>&amp;#8711;</td>
+      <td>&amp;nabla;</td>
+      <td>NABLA</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_nabla"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8712;</td>
+      <td>&amp;#8712;</td>
+      <td>&amp;isin;</td>
+      <td>ELEMENT OF</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_isin"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8713;</td>
+      <td>&amp;#8713;</td>
+      <td>&amp;notin;</td>
+      <td>NOT AN ELEMENT OF</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_notin"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8715;</td>
+      <td>&amp;#8715;</td>
+      <td>&amp;ni;</td>
+      <td>CONTAINS AS MEMBER</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_ni"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8719;</td>
+      <td>&amp;#8719;</td>
+      <td>&amp;prod;</td>
+      <td>N-ARY PRODUCT</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_prod"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8721;</td>
+      <td>&amp;#8721;</td>
+      <td>&amp;sum;</td>
+      <td>N-ARY SUMMATION</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_sum"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+  </table>
+  <h2>Some Other Entities Supported by HTML</h2>
+  <table class="ws-table-all notranslate">
+    <tr>
+      <th style="width: 10%">Char</th>
+      <th style="width: 10%">Number</th>
+      <th style="width: 15%">Entity</th>
+      <th>Description</th>
+      <th style="width: 10%">Try it</th>
+    </tr>
+    <tr>
+      <td>&#169;</td>
+      <td>&amp;#169;</td>
+      <td>&amp;copy;</td>
+      <td>COPYRIGHT SIGN</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_copy"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#174;</td>
+      <td>&amp;#174;</td>
+      <td>&amp;reg;</td>
+      <td>REGISTERED SIGN</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_reg"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8364;</td>
+      <td>&amp;#8364;</td>
+      <td>&amp;euro;</td>
+      <td>EURO SIGN</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_euro"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8482;</td>
+      <td>&amp;#8482;</td>
+      <td>&amp;trade;</td>
+      <td>TRADEMARK</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_trade"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8592;</td>
+      <td>&amp;#8592;</td>
+      <td>&amp;larr;</td>
+      <td>LEFTWARDS ARROW</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_larr"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8593;</td>
+      <td>&amp;#8593;</td>
+      <td>&amp;uarr;</td>
+      <td>UPWARDS ARROW</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_uarr"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8594;</td>
+      <td>&amp;#8594;</td>
+      <td>&amp;rarr;</td>
+      <td>RIGHTWARDS ARROW</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_rarr"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#8595;</td>
+      <td>&amp;#8595;</td>
+      <td>&amp;darr;</td>
+      <td>DOWNWARDS ARROW</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_darr"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#9824;</td>
+      <td>&amp;#9824;</td>
+      <td>&amp;spades;</td>
+      <td>BLACK SPADE SUIT</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_spades"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#9827;</td>
+      <td>&amp;#9827;</td>
+      <td>&amp;clubs;</td>
+      <td>BLACK CLUB SUIT</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_clubs"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#9829;</td>
+      <td>&amp;#9829;</td>
+      <td>&amp;hearts;</td>
+      <td>BLACK HEART SUIT</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_hearts"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&#9830;</td>
+      <td>&amp;#9830;</td>
+      <td>&amp;diams;</td>
+      <td>BLACK DIAMOND SUIT</td>
+      <td>
+        <a
+          target="_blank"
+          class="w3-btn btnsmall btnsmall"
+          href="tryit.asp?filename=tryhtml_symbol_diams"
+          >Try it &raquo;</a
+        >
+      </td>
+    </tr>
+  </table>
+  <body></body>
+</html>
